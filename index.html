@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <meta name="description" content="Koliago is a modern grocery delivery app that brings fresh food and daily essentials to your door quickly and reliably.">
+   <link rel="icon " href="img/favicon.png"/>
+   <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+   <link rel="manifest" href="manifest.webmanifest"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Koliago &mdash; Grocery Delivery App</title>
+  
+  <link rel="stylesheet" href="Css/General.css">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/Queries.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+<script defer src="javascript/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#">
+      <img src="img/koliago.png" class="logo" alt="koliago logo">
+    </a>
+    <nav class="main-nav">
+<ul class="main-nav-list">
+   <li><a href="#how" class="main-nav-link">How It Works</a></li>
+   <li><a href="#meals" class="main-nav-link">Categories</a></li>
+   <li><a href="#test" class="main-nav-link">Reviews</a></li>
+   <li><a href="#price" class="main-nav-link">Pricing</a></li>
+   <li><a href="#cta" class="main-nav-link nav-cta">Get Started</a></li>
+</ul>
+    </nav>
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+ 
+  <main>
+  <section class="section-hero">
+    <div class="hero">
+    <div class="hero-text-box">
+      <h1 class="heading-primary">Bring the <span class="hero-accent">Store</span><br/>to your <span class="hero-accent">Door</span></h1>
+      <p class="hero-description">
+        Koliago delivers farm-fresh groceries in minutes. Explore categories, track your order live, and enjoy stress-free shopping every day.
+      </p>
+      <a href="#how" class="btn btn-full margin-right-sn">How to Order</a>
+      <a href="#meals" class="btn btn-outline">See Categories</a>
+      <div class="delivered-meals">
+        <div class="delivered-imgs">
+            <img src="img/customers/customer-1.jpg" alt="Happy customer 1"/>
+            <img src="img/customers/customer-2.jpg" alt="Happy customer 2"/>
+            <img src="img/customers/customer-3.jpg" alt="Happy customer 3"/>
+        </div>
+        <p class="delivered-text">Our Happy Customer<br/><span>4.6</span> (10.1k review)</p>
+      </div>
+      <div class="hero-floating-items" aria-hidden="true">
+        <span class="hero-float hero-float-1">🍒</span>
+        <span class="hero-float hero-float-2">🌽</span>
+        <span class="hero-float hero-float-3">🌶️</span>
+        <span class="hero-float hero-float-4">🍇</span>
+      </div>
+    </div>
+    <div class="hero-img-box">
+      <div class="hero-image-wrap">
+        <img src="img/hero3.png" class="hero-img" alt="Groceries delivery hero image"/>
+      </div>
+    </div>
+  </div>
+  <div class="hero-phone-strip">
+      <div class="container hero-phones-wrap">
+        <div class="hero-store-box">
+          <h3 class="hero-store-title">Grab <span class="hero-accent">Fresh</span> Groceries Near You</h3>
+          <div class="hero-store-links">
+            <a href="#" class="store-badge">Get it on <strong>Google Play</strong></a>
+            <a href="#" class="store-badge">Download on the <strong>App Store</strong></a>
+          </div>
+        </div>
+        <div class="hero-phones">
+          <img src="img/app/app-screen-1.png" class="hero-phone hero-phone-left" alt="App screen preview left"/>
+          <img src="img/app/app-screen-1.png" class="hero-phone hero-phone-center" alt="App screen preview center"/>
+          <img src="img/app/app-screen-1.png" class="hero-phone hero-phone-right" alt="App screen preview right"/>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section class="section-featured">
+    <div class="container">
+      <h2 class="heading-featured-in">Trusted by modern food brands</h2>
+     <div class="logos">
+      <img src="img/logos/techcrunch.png" alt="techcrunch"/>
+      <img src="img/logos/business-insider.png" alt="business-insider"/>
+      <img src="img/logos/the-new-york-times.png" alt=""/>
+      <img src="img/logos/forbes.png" alt="forbes"/>
+      <img src="img/logos/usa-today.png" alt="usa-today"/>
+     </div>
+    </div>
+  </section>
+  <section class="section-how " id="how">
+     <div class="container">
+      <span class="subheading">How it works</span>
+      <h2 class="heading-secondary">Get your groceries in 3 simple steps</h2>
+
+     </div>
+     <div class="container  grid  grid--2-cols grid--center-v " >
+                          <!--  step 01 -->
+          <div class="step-text-box">
+               <p class="step-number">01</p>
+               <h3 class="heading-tertiary">Choose your grocery preferences</h3>
+               <p class="step-description">
+               Browse fresh produce, pantry essentials, and daily offers. Save your favorites and build your basket in seconds.
+              </p>
+            </div>
+          <div class="step-img-box">
+            <img src="img/app/app-screen-1.png"  class="step-img"alt="iphone app preferences section screen">
+            
+          </div>
+                          <!--  step 02 -->
+            <div class="step-img-box">
+            <img src="img/app/app-screen-2.png"  class="step-img"alt="iphone app preferences section screen">           
+              </div>
+
+
+              <div class="step-text-box">
+                <p class="step-number">02</p>
+                <h3 class="heading-tertiary">Confirm your cart and address</h3>
+                <p class="step-description">
+                 Choose your preferred delivery slot, payment method, and notes. Koliago instantly confirms your order.
+
+               </p>
+             </div>
+                                    <!--  step 03 -->
+           <div class="step-text-box">
+           <p class="step-number">03</p>
+          <h3 class="heading-tertiary">Receive your order at your door</h3>
+          <p class="step-description">
+             Track your rider in real time and get your groceries fast, fresh, and safely packed whenever you need.
+          </p>
+          </div>                                                          
+             <div class="step-img-box">
+             <img src="img/app/app-screen-3.png"  class="step-img"alt="iphone app preferences section screen">           
+            </div>
+                                   
+     </div>
+
+  </section>
+  <section class="section-meals" id="meals">
+    <div class="container center-text">
+      <span class="subheading">Categories</span>
+      <h2 class="heading-secondary">Top picks from Koliago marketplace</h2>
+     </div>
+     <div class=" container grid grid--3-cols margin-bottom-nd ">
+    <div class="meal">
+      <img src="img/meals/meal-1.jpg" class="meal-img" alt="japan gyozas"/>
+        <div class="meal-content">
+      <div class="meal-tags">
+        <span class="tag tag--vegetarian">Vegetarian</span>
+    </div>
+      
+        
+      
+      <p class="meal-title">Fresh Veggie Box</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute"><ion-icon class="meal-icon" name="bonfire"></ion-icon>
+           <span><strong>650</strong> Calories</span> </li>
+        <li class="meal-attribute"><ion-icon  class="meal-icon" name="restaurant"></ion-icon>
+           <span>NutriScore &reg; <strong>74</strong> </span></li>
+        <li class="meal-attribute"><ion-icon class="meal-icon" name="star-outline"></ion-icon>
+           <sapn> <strong>4.9</strong> rating (537)</sapn></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <div class="meal">
+      <img src="img/meals/meal-2.jpg" class="meal-img" alt="japan gyozas"/>
+        <div class="meal-content">
+      <div class="meal-tags">
+        <span class="tag tag--vegan">Vegan</span>
+        <span class="tag tag--paleo">Paleo</span>
+    </div>
+      
+        
+      
+      <!-- <p class="meal-title">Healthy Family Basket</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute"><ion-icon class="meal-icon" name="bonfire"></ion-icon>
+           <span><strong>400</strong> Calories</span> </li>
+        <li class="meal-attribute"><ion-icon  class="meal-icon" name="restaurant"></ion-icon>
+           <span>NutriScore &reg; 92<strong>74</strong> </span></li>
+        <li class="meal-attribute"><ion-icon class="meal-icon" name="star-outline"></ion-icon>
+           <sapn> <strong>4.8</strong> rating (537)</sapn></li>
+      </ul>
+    </div> -->
+  
+    <!-- <div class="list diets" >
+      <h3 class="heading-tertiary">Perfect for every lifestyle</h3>
+      <ul class="list">
+         <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Vegetarian</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Vegan</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Pescatarian</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Gluten-free</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Lactose-free</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Keto</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Paleo</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Low FODMAP</span></li>
+         <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Kid-friendly</span></li>
+        
+      </ul>
+    </div> -->
+
+     </div>
+     <div class="container all-recipes">
+      <a href=""class="link">
+        See all categories &rarr;
+      </a>
+     </div>
+  </section>
+  <section class="section-testimonials " id="test">
+
+    <div class="testimonials-container">
+      <span class="subheading">Testimonials</span>
+      <h2 class="heading-secondary">People love ordering with Koliago</h2>
+    
+
+
+    <div class="testimonials">
+      <figure class="testimonial">
+        <img src="img/customers/dave.jpg" class="testimonial-img"alt="photo of curstomer dave bryan"/>
+        <blockquote class="testimonial-text ">
+          Super fast delivery and amazing product freshness. I order fruits and essentials every week now.
+        </blockquote>
+        <p class="testimonial-name">&ndash; Dave Bryan</p>
+      </figure>
+      <figure class="testimonial">
+        <img src="img/customers/steve.jpg" class="testimonial-img" alt="photo of curstomer dave bryan"/>
+        <blockquote class="testimonial-text ">
+          The app is simple and smooth. I can find offers quickly and delivery is always on time.
+        </blockquote>
+        <p class="testimonial-name">&ndash; Steve Miller</p>
+      </figure>
+      <figure class="testimonial">
+        <img src="img/customers/dave.jpg" class="testimonial-img" alt="photo of curstomer dave bryan"/>
+        <blockquote class="testimonial-text ">
+          Koliago is a life saver for my busy schedule. Great quality, quick checkout, and excellent support.
+        </blockquote>
+        <p class="testimonial-name">&ndash; Sarah Ahmed</p>
+      </figure>
+      <figure class="testimonial">
+        <img src="img/customers/ben.jpg" class="testimonial-img" alt="photo of curstomer dave bryan"/>
+        <blockquote class="testimonial-text ">
+          My whole family uses Koliago. Fresh items, fair prices, and very reliable delivery in our area.
+        </blockquote>
+        <p class="testimonial-name">&ndash; Ben Hadid</p>
+      </figure>
+    </div>
+  </div>
+
+
+
+  <div class="gallery">
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-1.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-2.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-3.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-4.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-5.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-6.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-7.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-8.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-9.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-10.jpg" alt="">
+    </figure><figure class="gallery-item">
+      <img src="img/gallery/gallery-11.jpg" alt="">
+    </figure>
+    <figure class="gallery-item">
+      <img src="img/gallery/gallery-12.jpg" alt="">
+    </figure>
+  </div>
+  </div>
+  </section>
+  <!-- <section class="section-pricing" id="price">
+
+    <div class="container ">
+      <span class="subheading">Pricing</span>
+      <h2 class="heading-secondary">
+        Flexible plans for every household
+      </h2>
+     </div>
+
+     <div class="container grid grid--2-cols margin-bottom-nd">
+      <div class="pricing-plan pricing-plan--starder">
+            <header class="plan-header">
+
+              <p class="plan-name">Starter</p>
+              <p class="plan-price"><span>$</span>399</p>
+              <p class="plan-text">per month, ideal for light weekly shopping</p>
+            </header>
+           
+            <ul class="list">
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>1 delivery per day</span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Order between 7 AM and 11 PM</span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Free delivery</span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="close"></ion-icon></li>
+            </ul>
+            <div class="plan-sing-up">
+
+              <a href="#" class="btn btn-full margin-right-sn">Choose Starter</a>
+            </div>
+
+      </div>
+
+
+
+    
+
+
+       
+      <div class="pricing-plan pricing-plan--complete">
+        <header class="plan-header">
+
+          <p class="plan-name">Complete</p>
+          <p class="plan-price"><span>$</span>399</p>
+          <p class="plan-text">per month, best for families and daily shoppers</p>
+          
+        </header>
+            <ul class="list">
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span><strong>2 deliveries per day</strong></span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Order <strong>24/7</strong> </span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Priority free delivery</span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Exclusive weekly discounts</span></li>
+            </ul>
+            <div class="plan-sing-up">
+
+              <a href="#" class="btn btn-full margin-right-sn">Choose Complete</a>
+            </div> 
+
+      
+     </div>
+     </div>
+        
+     <div class="container grid">
+      <aside class="plan-details">
+        Prices include all applicable taxes. Cancel anytime with no hidden fees. Both plans include:
+      </aside>
+      </div>
+
+     <div class=" container grid grid--4-cols">
+       <div class="feature">
+        <ion-icon class="feature-icon" name="infinite"></ion-icon>
+       <p class="feature-title">Fast delivery network</p>
+       <p class="feature-text">
+         We deliver 7 days a week, including weekends and holidays, across major city zones.
+        </p>
+      </div>
+
+      
+      <div class="feature">
+        <ion-icon class="feature-icon" name="nutrition"></ion-icon>
+        <p class="feature-title">Fresh and local</p>
+        <p class="feature-text">
+          We source from trusted local markets to keep quality high and produce fresh.
+        </p>
+      </div>
+      
+      <div class="feature">
+        <ion-icon class="feature-icon" name="leaf"></ion-icon>
+        <p class="feature-title">Secure packaging</p>
+        <p class="feature-text">
+          Orders are packed carefully to protect your groceries and keep items safe.
+        </p>
+      </div>
+      
+      <div class="feature">
+       <ion-icon class="feature-icon" name="pause"></ion-icon>
+      <p class="feature-title">Pause anytime</p>
+      <p class="feature-text">
+        Going on vacation? Pause your plan and restart anytime with one tap.
+       </p>
+     </div>
+
+
+    
+    </div>
+  </section> -->
+  <!-- <section class="section-cta" id="cta">
+    <div class="container ">
+      <div class="cta">
+
+        <div class="cta-text-box">
+          <h2 class="heading-secondary">Get your first delivery for free</h2>
+          <p class="cta-text">
+            Fresh groceries and essentials are waiting for you. Sign up now and claim your first free delivery with Koliago.
+          </p>
+          <form class="cta-form" name="sign-up" netlify>
+            <div>
+              <label for="full-name">Full name</label>
+              <input id="full-name" type="text" name="full-name" placeholder="Full-name" required>
+            </div>
+              
+            <div>
+              <label for="Email">Email</label>
+              <input id="Email" type="email" name="Email" placeholder="you@example.com" required>
+            </div>
+
+            <div>
+              <label for="select-where">Where did you hear from us </label>
+              <select name="select-where" id="select-where" required>
+                <option value="">Please choose one option </option>
+                <option value="friends">Friends</option>
+                <option value="Youtube">YouTube videos</option>       
+                <option value="podcast">Podcast</option>       
+                <option value="facebook">Facebook ad</option>       
+                <option value="other">Other</option>
+              </select>
+            </div>
+                
+                
+                
+            <button class="btn--form btn">Sign up now</button>
+
+          </form>
+        </div>
+        <div class="cta-img-box" role="img" aria-label="cta-img-box"></div>
+      </div>
+    </div>
+  </section> -->
+</main>
+<section class="section-discount">
+  <div class="container discount-banner">
+    <div class="discount-brand">
+      <h3>KOLIAGO</h3>
+      <p>PREMIUM CUSTOMER</p>
+    </div>
+    <div class="discount-copy">
+      Want additional discounts every shopping day? Enjoy a variety of special offers and experience better value on every order. Join Koliago Premium now.
+    </div>
+    <div class="discount-actions">
+      <a href="#cta" class="discount-btn">Join Now</a>
+      <a href="#price" class="discount-btn discount-btn-outline">More Info</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container footer-clean">
+    <div class="footer-brand-col">
+      <a href="#" class="footer-logo">
+        <img src="img/koliago.png" class="logo" alt="koliago logo">
+      </a>
+      <p class="footer-brand-copy">Best groceries app ever. Pick your desired groceries from the menu.</p>
+      <ul class="social-link">
+        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
+        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
+        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
+      </ul>
+    </div>
+    <nav class="footer-col">
+      <p class="footer-heading">Support</p>
+      <ul class="footer-nav">
+        <li><a href="#" class="footer-link">Account</a></li>
+        <li><a href="#" class="footer-link">Support Center</a></li>
+        <li><a href="#" class="footer-link">Feedback</a></li>
+        <li><a href="#" class="footer-link">Accessibility</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col">
+      <p class="footer-heading">Useful Links</p>
+      <ul class="footer-nav">
+        <li><a href="#" class="footer-link">Payment & Tax</a></li>
+        <li><a href="#" class="footer-link">Terms of Service</a></li>
+        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        <li><a href="#" class="footer-link">About Us</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col">
+      <p class="footer-heading">Our Menu</p>
+      <ul class="footer-nav">
+        <li><a href="#" class="footer-link">Top Selling</a></li>
+        <li><a href="#" class="footer-link">Categories</a></li>
+        <li><a href="#" class="footer-link">Fresh Deals</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>

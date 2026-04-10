@@ -1,0 +1,434 @@
+/* Rem and em do not dependon html font size ne media querie instead 1rem=1em=16px */
+/* below 1344px smaller desktops 85*16 */
+@media (max-width:84em){
+     .hero{
+      max-width: 120rem;
+     }
+     .heading-primary{
+      font-size: 4.4rem;
+     }
+     .gallery{
+      
+      grid-template-columns:repeat(2,1fr);
+    }
+}
+/* Below 1200px(lanscape table) */
+@media (max-width:75em){
+  html{
+    /* 9/16px */
+    font: size 56.23%;;
+  }
+  .haeding-secondary{
+    font-size:3.6rem;
+  }
+  .heading-tertiary{
+    font-size: 2.4rem;
+  }
+  .grid{
+    row-gap:6.4rem;
+    column-gap: 4.8rem;
+  
+  }
+  .header{
+    height: 10.4rem;
+    padding: 0 3.2rem;
+  }
+  .header .logo{
+    height: 6.8rem;
+  }
+  .sticky .header{
+    height: 8.8rem;
+  }
+  .sticky .section-hero{
+    margin-top: 10.4rem;
+  }
+  .hero{
+    gap: 4.8rem;
+  }
+  .main-nav-list{
+    gap: 3.2rem;
+  }
+  .testimonials-container{
+    padding: 9.6rem 3.2rem;
+  }
+}
+/* below 944 (Tablets) */
+@media (max-width:59em){
+     html{
+      /* 8px /16px=0.5=50% */
+      font-size: 50%;
+     }
+     .hero{
+      grid-template-columns: 1fr;
+      padding: 0 8rem;
+      gap: 6.4rem;
+    }
+     .header{
+      height: 9.2rem;
+      padding: 0 2.4rem;
+     }
+     .header .logo{
+      height: 5.6rem;
+     }
+     .sticky .header{
+      height: 7.6rem;
+     }
+     .sticky .section-hero{
+      margin-top: 9.2rem;
+     }
+     .hero-text-box,.hero-img-box{
+      text-align: center;
+
+     }
+     .hero-img{
+      width: 60%;
+     }
+     .hero-image-wrap::before{
+      width: 28rem;
+      height: 28rem;
+     }
+     .hero-image-wrap::after{
+      width: 33rem;
+      height: 33rem;
+     }
+     .hero-floating-items{
+      display: none;
+     }
+     .hero-phone-strip{
+      min-height: 20rem;
+      padding: 2.4rem 0 0;
+     }
+     .hero-phones-wrap{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1.2rem;
+     }
+     .hero-store-box{
+      text-align: center;
+      padding-bottom: 1.2rem;
+     }
+     .hero-store-title{
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+     }
+     .hero-store-links{
+      justify-content: center;
+     }
+     .hero-phones{
+      transform: none;
+      margin-top: -6.4rem;
+      margin-bottom: -4.2rem;
+      gap: 0.4rem;
+     }
+     .hero-phone{
+      width: 14rem;
+     }
+     .delivered-meals{
+      justify-content: center;
+      margin-top: 3.2rem;
+    }
+    .logos img{
+      height: 2.4rem;
+    }
+    .step-number{
+      font-size: 7.4rem;
+    }
+    /* paddin card meal */
+    .meal-content{
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+    /*  */
+    .section-testimonials{
+      grid-template-columns: 1fr;
+    }
+    /*  image reverse 6 column*/
+    .gallery{
+      grid-template-columns: repeat(6,1fr);
+
+    }
+    .cta{
+      /* 3/5=60% 2/5=40% */
+      grid-template-columns: 3fr 2fr;
+    }
+    .discount-banner{
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 1.6rem;
+    }
+    .discount-actions{
+      flex-direction: row;
+      justify-content: center;
+    }
+    .footer-clean{
+      grid-template-columns: repeat(2,1fr);
+      gap: 3.2rem;
+    }
+    .cta-form{
+      
+      grid-template-columns: 1fr;
+    }
+    .btn-form{
+      margin-top: 1.2rem;
+    }
+    /* mobile navigation */
+    .btn-mobile-nav{
+     display: block;
+     z-index: 100;
+    }
+    .main-nav{
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* hide navigation */
+      /* allows no transition at all */
+      /* display: none; */
+      transition: all 0.5s ease-in;
+  /* hide steps */
+  /* 1 step hideit visually */
+      opacity: 0;
+/*  2 Maake it un accessible to mouse and keywoard */
+      pointer-events:none;
+      visibility: hidden;
+    }
+    .main-nav-list{
+      flex-direction: column;
+      gap:4.8rem;
+    }
+    .main-nav-link:link,
+.main-nav-link:visited{
+  
+ font-size:3rem;
+ 
+}
+.nav-open .main-nav{
+  opacity: 1;
+  pointer-events:auto;
+  visibility: visible;
+  transform: translateX(0);
+
+}
+.nav-open .icon-mobile-nav[name="close-outline"]{
+  display: block;
+}
+.nav-open .icon-mobile-nav[name="menu-outline"]{
+  display: none;
+ }
+}
+/* below 704px (smaller tablets) */
+@media(max-width:44em){
+
+  .grid--3-cols,
+  .grid--4-cols{
+  grid-template-columns: repeat(2,1fr);
+  }
+  .diets{
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .haeding-secondary{
+    /* font-size: 4.8rem; */
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan{
+    width: 100%;
+  }
+  .footer-clean{
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .footer-brand-col{
+    grid-column: 1 / -1;
+  }
+  .hero-store-title{
+    font-size: 2.8rem;
+  }
+  
+}
+/* below 544px */
+@media (max-width:34em) {
+   .grid{
+    row-gap: 4.8rem;
+   }
+  .grid--3-cols,
+.grid--2-cols,.grid--4-cols{
+  grid-template-columns:1fr;
+  }
+  .btn,.btn:link,.btn:visited{
+    padding: 2.4rem 1.2rem;
+    
+  }
+
+  .section-hero{
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .header{
+    height: 8rem;
+    padding: 0 1.6rem;
+  }
+  .header .logo{
+    height: 4.8rem;
+  }
+  .sticky .header{
+    height: 6.8rem;
+  }
+  .sticky .section-hero{
+    margin-top: 8rem;
+  }
+  .hero{
+    padding:0 3.2rem
+  }
+  .hero-img{
+    width: 80%;
+  }
+  .hero-image-wrap::before{
+    width: 24rem;
+    height: 24rem;
+  }
+  .hero-image-wrap::after{
+    width: 28rem;
+    height: 28rem;
+  }
+  .hero-phone-strip{
+    margin-top: 4.8rem;
+    min-height: 16rem;
+    padding: 2.4rem 0 0;
+  }
+  .hero-store-title{
+    font-size: 2.6rem;
+  }
+  .store-badge:link,
+  .store-badge:visited{
+    font-size: 1.15rem;
+    padding: 0.8rem 1rem;
+  }
+  .hero-phones{
+    transform: none;
+    margin-top: -3.2rem;
+    margin-bottom: -2.2rem;
+    gap: 0.2rem;
+  }
+  .hero-phone{
+    width: 10.5rem;
+    max-width: 32%;
+    border-radius: 1.6rem;
+  }
+  .hero-phone-center{
+    width: 11.6rem;
+  }
+  .logos img{
+    height:1.2rem ;
+  }
+  /* selector is the child but nth-child is for container appeler toi */
+  .step-img-box:nth-child(2){
+     grid-row: 1;
+  }
+  .step-img-box:nth-child(6){
+    grid-row: 5;
+
+ }
+ .step-img-box{
+  /* use transform translate to move a element withoust  affect element around  */
+  transform: translateY(2.4rem);
+ }
+ .testimonials{
+  grid-template-columns: 1fr;
+ }
+ .gallery{
+  grid-template-columns: repeat(4,1fr);
+   gap: 1.6rem;
+}
+.cta{
+  grid-template-columns: 1fr;
+}
+.cta-text-box{
+  padding: 3.2rem;
+}
+.cta-img-box{
+  height: 32rem;
+  grid-row: 1;
+}
+ .discount-banner{
+  padding: 2rem 1.6rem;
+  border-radius: 0.8rem;
+ }
+ .discount-brand h3{
+  font-size: 1.8rem;
+ }
+ .discount-copy{
+  font-size: 1.4rem;
+ }
+ .discount-actions{
+  flex-direction: column;
+  align-items: center;
+ }
+ .footer{
+  padding: 4.8rem 0 3.2rem;
+ }
+ .footer-clean{
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+ }
+ .footer-brand-copy{
+  max-width: 100%;
+  font-size: 1.8rem;
+ }
+}
+/* ---------------- */
+/* fixing safari flexbox   */
+/* ---------------- */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
