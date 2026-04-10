@@ -14,12 +14,44 @@
   position: relative;
 }
 .logo {
+ 
   height: 2.2rem;
 }
 
 .header .logo {
-  height: 8.8rem;
+  border-radius: 50px;
+  height: 4.8rem;
   width: auto;
+}
+
+.brand:link,
+.brand:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-decoration: none;
+  color: #18254a;
+}
+
+.brand-text {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.brand-text-accent {
+  color: #290202;;
+}
+
+.brand:hover .brand-text {
+  color: #0f1f4a;
+}
+
+.brand:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.6rem rgba(255, 59, 48, 0.28);
+  border-radius: 1.2rem;
 }
 
 /* ------------------- */
@@ -50,7 +82,7 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #ff3b30;
+  background-color: #9b0303;
 }
 .sticky .header {
   position: fixed;
@@ -259,19 +291,71 @@
 .store-badge:visited {
   display: inline-flex;
   align-items: center;
-  padding: 1rem 1.4rem;
-  border-radius: 0.8rem;
+  gap: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.4rem;
   text-decoration: none;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background-color: rgba(0, 0, 0, 0.22);
-  font-size: 1.3rem;
-  line-height: 1.2;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.42) 100%);
+  box-shadow: 0 1.8rem 4.2rem rgba(0, 0, 0, 0.25);
+  line-height: 1.1;
+  min-height: 6.2rem;
+  min-width: 21rem;
 }
 
 .store-badge:hover,
 .store-badge:active {
-  background-color: rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.48) 100%);
+}
+
+.store-badge__icon {
+  width: 4.2rem;
+  height: 4.2rem;
+  /* border-radius: 1.2rem; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.08); */
+  /* border: 1px solid rgba(255, 255, 255, 0.14); */
+}
+
+.store-badge__icon ion-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: #fff;
+}
+
+.store-badge__icon svg {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: block;
+}
+
+.store-badge__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+.store-badge__kicker {
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.store-badge__store {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.store-badge--apple .store-badge__icon {
+  border-radius: 1.6rem;
 }
 
 .hero-phones {
@@ -288,7 +372,7 @@
   width: 17rem;
   max-width: 30%;
   border-radius: 2.4rem;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.28);
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.28); */
 }
 
 .hero-phone-left {
@@ -588,7 +672,7 @@
   text-align: center;
 }
 .feature-icon {
-  color: #ff3b30;
+  color: #9b0303;;
   width: 3.4rem;
   height: 3.4rem;
   margin-bottom: 2.4rem;

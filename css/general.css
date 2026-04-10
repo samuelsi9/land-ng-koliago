@@ -138,7 +138,7 @@ margin-bottom: 9.6rem;
 display: block;
 font-size:1.6rem;
 font-weight: 600;
-color:#ff3b30;
+color:#9b0303;
 text-transform: uppercase;
 margin-bottom: 1.6rem;
 letter-spacing: 0.75px;
@@ -146,7 +146,7 @@ letter-spacing: 0.75px;
 }
 
 .btn,.btn:link,.btn:visited{
-  background-color: #ff3b30;
+  background-color: #9b0303;;
   color:#fff;
   border: none;
   cursor: pointer;
@@ -164,12 +164,12 @@ letter-spacing: 0.75px;
 .btn-full:link,
 .btn-full:visited{
    
-  background-color: #ff3b30;
+  background-color: #9b0303;;
   color:#fff;
 }
 .btn-full:hover,
 .btn-full:active{ 
-  background-color: #e03131;
+  background-color: #9b0303;;
   
 }
 .btn--form{
@@ -198,7 +198,7 @@ letter-spacing: 0.75px;
 .link:link,
 .link:visited{
   display: inline-block;
-  color:#ff3b30;
+  color:#9b0303;;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding: 2px;
@@ -206,7 +206,7 @@ letter-spacing: 0.75px;
 .link:hover,
 .link:active{
   display: inline-block;
-  color:#e03131;
+  color:#9b0303;;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
@@ -228,7 +228,7 @@ letter-spacing: 0.75px;
 .list-icon{
   width:3rem;
   height:3rem;
-  color:#ff3b30;
+  color:#9b0303;;
 }
 /* helper section class */
 .margin-right-sn{

@@ -25,15 +25,18 @@
 </head>
 <body>
   <header class="header">
-    <a href="#">
-      <img src="img/koliago.png" class="logo" alt="koliago logo">
+    <a href="#" class="brand" aria-label="Koliago home">
+      <img src="img/koliago2.png" class="logo" alt="Koliago logo">
+      <span class="brand-text">
+        <span class="brand-text-accent">Ko</span>liago
+      </span>
     </a>
     <nav class="main-nav">
 <ul class="main-nav-list">
    <li><a href="#how" class="main-nav-link">How It Works</a></li>
-   <li><a href="#meals" class="main-nav-link">Categories</a></li>
+   <!-- <li><a href="#meals" class="main-nav-link">Categories</a></li>
    <li><a href="#test" class="main-nav-link">Reviews</a></li>
-   <li><a href="#price" class="main-nav-link">Pricing</a></li>
+   <li><a href="#price" class="main-nav-link">Pricing</a></li> -->
    <li><a href="#cta" class="main-nav-link nav-cta">Get Started</a></li>
 </ul>
     </nav>
@@ -59,7 +62,7 @@
             <img src="img/customers/customer-2.jpg" alt="Happy customer 2"/>
             <img src="img/customers/customer-3.jpg" alt="Happy customer 3"/>
         </div>
-        <p class="delivered-text">Our Happy Customer<br/><span>4.6</span> (10.1k review)</p>
+        <p class="delivered-text">Make our customers Happy<br/><span>4.6</span> (10.1k review)</p>
       </div>
       <div class="hero-floating-items" aria-hidden="true">
         <span class="hero-float hero-float-1">🍒</span>
@@ -79,14 +82,36 @@
         <div class="hero-store-box">
           <h3 class="hero-store-title">Grab <span class="hero-accent">Fresh</span> Groceries Near You</h3>
           <div class="hero-store-links">
-            <a href="#" class="store-badge">Get it on <strong>Google Play</strong></a>
-            <a href="#" class="store-badge">Download on the <strong>App Store</strong></a>
+            <a href="#" class="store-badge store-badge--apple" aria-label="Download on the App Store">
+              <span class="store-badge__icon" aria-hidden="true">
+                <ion-icon name="logo-apple"></ion-icon>
+              </span>
+              <span class="store-badge__text">
+                <span class="store-badge__kicker">Download on the</span>
+                <span class="store-badge__store">App Store</span>
+              </span>
+            </a>
+
+            <a href="#" class="store-badge store-badge--google" aria-label="Get it on Google Play">
+              <span class="store-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 512 512" width="26" height="26" role="presentation" aria-hidden="true">
+                  <path fill="#00A0FF" d="M71.8 39.4c-7.6 7.7-12 20-12 36.8v359.6c0 16.8 4.4 29.1 12 36.8l1.9 1.8 203.7-203.7v-10.6L73.7 37.6l-1.9 1.8z"/>
+                  <path fill="#00D18A" d="M314.8 256 95.7 36.9c5.2-.3 11.1 1 17.7 4.7l262.6 150.8c13.2 7.6 21 17.6 21 28.6s-7.8 21-21 28.6L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7L314.8 256z" opacity=".98"/>
+                  <path fill="#FFD54A" d="M376 249.6 314.8 256l61.2 6.4 72.2-41.4c13.2-7.6 21-17.6 21-28.6 0 11-7.8 21-21 28.6L376 249.6z"/>
+                  <path fill="#FF3B30" d="M95.7 475.1 314.8 256l61.2 6.4L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7z" opacity=".85"/>
+                </svg>
+              </span>
+              <span class="store-badge__text">
+                <span class="store-badge__kicker">GET IT ON</span>
+                <span class="store-badge__store">Google Play</span>
+              </span>
+            </a>
           </div>
         </div>
         <div class="hero-phones">
-          <img src="img/app/app-screen-1.png" class="hero-phone hero-phone-left" alt="App screen preview left"/>
-          <img src="img/app/app-screen-1.png" class="hero-phone hero-phone-center" alt="App screen preview center"/>
-          <img src="img/app/app-screen-1.png" class="hero-phone hero-phone-right" alt="App screen preview right"/>
+          <img src="img/app/app-screen-7.png" class="hero-phone hero-phone-left" alt="App screen preview left"/>
+          <img src="img/app/app-screen-9.png" class="hero-phone hero-phone-center" alt="App screen preview center"/>
+          <img src="img/app/app-screen-10.png" class="hero-phone hero-phone-right" alt="App screen preview right"/>
         </div>
       </div>
   </div>
@@ -151,7 +176,7 @@
      </div>
 
   </section>
-  <section class="section-meals" id="meals">
+  <!-- <section class="section-meals" id="meals">
     <div class="container center-text">
       <span class="subheading">Categories</span>
       <h2 class="heading-secondary">Top picks from Koliago marketplace</h2>
@@ -214,7 +239,7 @@
          <li class="list-item"><ion-icon class="list-icon"name="checkmark"></ion-icon><span>Kid-friendly</span></li>
         
       </ul>
-    </div> -->
+    </div> 
 
      </div>
      <div class="container all-recipes">
@@ -303,7 +328,7 @@
     </figure>
   </div>
   </div>
-  </section>
+  </section> -->
   <!-- <section class="section-pricing" id="price">
 
     <div class="container ">
@@ -470,7 +495,7 @@
   <div class="container footer-clean">
     <div class="footer-brand-col">
       <a href="#" class="footer-logo">
-        <img src="img/koliago.png" class="logo" alt="koliago logo">
+        <img src="img/koliago2.png" class="logo" alt="koliago logo">
       </a>
       <p class="footer-brand-copy">Best groceries app ever. Pick your desired groceries from the menu.</p>
       <ul class="social-link">
