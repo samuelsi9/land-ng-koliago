@@ -1,221 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <meta name="description" content="Koliago is a modern grocery delivery app that brings fresh food and daily essentials to your door quickly and reliably.">
-   <link rel="icon " href="img/favicon.png"/>
-   <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
-   <link rel="manifest" href="manifest.webmanifest"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Koliago &mdash; Grocery Delivery App</title>
-  
-  <link rel="stylesheet" href="Css/General.css">
-  <link rel="stylesheet" href="Css/style.css">
-  <link rel="stylesheet" href="Css/Queries.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Koliago is a modern grocery delivery app that brings fresh food and daily essentials to your door quickly and reliably."
+    />
+    <link rel="icon " href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Koliago &mdash; Grocery Delivery App</title>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-<script defer src="javascript/script.js"></script>
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="brand" aria-label="Koliago home">
-      <img src="img/koliago2.png" class="logo" alt="Koliago logo">
-      <span class="brand-text">
-        <span class="brand-text-accent">Ko</span>liago
-      </span>
-    </a>
-    <nav class="main-nav">
-<ul class="main-nav-list">
-   <li><a href="#how" class="main-nav-link">How It Works</a></li>
-   <!-- <li><a href="#meals" class="main-nav-link">Categories</a></li>
+    <link rel="stylesheet" href="Css/General.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/Queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="javascript/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="brand" aria-label="Koliago home">
+        <img src="img/koliago2.png" class="logo" alt="Koliago logo" />
+        <span class="brand-text">
+          <span class="brand-text-accent">Ko</span>
+          liago
+        </span>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#how" class="main-nav-link">How It Works</a></li>
+          <!-- <li><a href="#meals" class="main-nav-link">Categories</a></li>
    <li><a href="#test" class="main-nav-link">Reviews</a></li>
    <li><a href="#price" class="main-nav-link">Pricing</a></li> -->
-   <li><a href="#cta" class="main-nav-link nav-cta">Get Started</a></li>
-</ul>
-    </nav>
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
-  </header>
- 
-  <main>
-  <section class="section-hero">
+          <li><a href="#cta" class="main-nav-link nav-cta">Get Started</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
 
+    <main>
+      <section class="section-hero">
+        <div class="hero-store-links">
+          <a
+            href="#"
+            class="store-badge store-badge--apple"
+            id="store-badge-header"
+            aria-label="Download on the App Store"
+          >
+            <span class="store-badge__icon" aria-hidden="true">
+              <ion-icon name="logo-apple"></ion-icon>
+            </span>
+            <span class="store-badge__text">
+              <span class="store-badge__kicker">Download on the</span>
+              <span class="store-badge__store">App Store</span>
+            </span>
+          </a>
 
-
-    <div class="hero-store-links">
-      <a href="#" class="store-badge store-badge--apple" aria-label="Download on the App Store">
-        <span class="store-badge__icon" aria-hidden="true">
-          <ion-icon name="logo-apple"></ion-icon>
-        </span>
-        <span class="store-badge__text">
-          <span class="store-badge__kicker">Download on the</span>
-          <span class="store-badge__store">App Store</span>
-        </span>
-      </a>
-
-      <a href="#" class="store-badge store-badge--google" aria-label="Get it on Google Play">
-        <span class="store-badge__icon" aria-hidden="true">
-          <svg viewBox="0 0 512 512" width="26" height="26" role="presentation" aria-hidden="true">
-            <path fill="#00A0FF" d="M71.8 39.4c-7.6 7.7-12 20-12 36.8v359.6c0 16.8 4.4 29.1 12 36.8l1.9 1.8 203.7-203.7v-10.6L73.7 37.6l-1.9 1.8z"/>
-            <path fill="#00D18A" d="M314.8 256 95.7 36.9c5.2-.3 11.1 1 17.7 4.7l262.6 150.8c13.2 7.6 21 17.6 21 28.6s-7.8 21-21 28.6L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7L314.8 256z" opacity=".98"/>
-            <path fill="#FFD54A" d="M376 249.6 314.8 256l61.2 6.4 72.2-41.4c13.2-7.6 21-17.6 21-28.6 0 11-7.8 21-21 28.6L376 249.6z"/>
-            <path fill="#FF3B30" d="M95.7 475.1 314.8 256l61.2 6.4L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7z" opacity=".85"/>
-          </svg>
-        </span>
-        <span class="store-badge__text">
-          <span class="store-badge__kicker">GET IT ON</span>
-          <span class="store-badge__store">Google Play</span>
-        </span>
-      </a>
-    </div>
-
-
-
-
-
-
-
-
-
-    
-    <div class="hero">
-    <div class="hero-text-box">
-      <h1 class="heading-primary">Bring the <span class="hero-accent">Store</span><br/>to your <span class="hero-accent">Door</span></h1>
-      <p class="hero-description">
-        Koliago delivers farm-fresh groceries in minutes. Explore categories, track your order live, and enjoy stress-free shopping every day.
-      </p>
-      <a href="#how" class="btn btn-full margin-right-sn">How to Order</a>
-      <a href="#meals" class="btn btn-outline">See Categories</a>
-      <div class="delivered-meals">
-        <div class="delivered-imgs">
-            <img src="img/customers/customer-1.jpg" alt="Happy customer 1"/>
-            <img src="img/customers/customer-2.jpg" alt="Happy customer 2"/>
-            <img src="img/customers/customer-3.jpg" alt="Happy customer 3"/>
+          <a
+            href="#"
+            class="store-badge store-badge--google"
+            id="store-badge-header"
+            aria-label="Get it on Google Play"
+          >
+            <span class="store-badge__icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 512 512"
+                width="26"
+                height="26"
+                role="presentation"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#00A0FF"
+                  d="M71.8 39.4c-7.6 7.7-12 20-12 36.8v359.6c0 16.8 4.4 29.1 12 36.8l1.9 1.8 203.7-203.7v-10.6L73.7 37.6l-1.9 1.8z"
+                />
+                <path
+                  fill="#00D18A"
+                  d="M314.8 256 95.7 36.9c5.2-.3 11.1 1 17.7 4.7l262.6 150.8c13.2 7.6 21 17.6 21 28.6s-7.8 21-21 28.6L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7L314.8 256z"
+                  opacity=".98"
+                />
+                <path
+                  fill="#FFD54A"
+                  d="M376 249.6 314.8 256l61.2 6.4 72.2-41.4c13.2-7.6 21-17.6 21-28.6 0 11-7.8 21-21 28.6L376 249.6z"
+                />
+                <path
+                  fill="#FF3B30"
+                  d="M95.7 475.1 314.8 256l61.2 6.4L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7z"
+                  opacity=".85"
+                />
+              </svg>
+            </span>
+            <span class="store-badge__text">
+              <span class="store-badge__kicker">GET IT ON</span>
+              <span class="store-badge__store">Google Play</span>
+            </span>
+          </a>
         </div>
-        <p class="delivered-text">Make our customers Happy<br/><span>4.6</span> (10.1k review)</p>
-      </div>
-      <div class="hero-floating-items" aria-hidden="true">
-        <span class="hero-float hero-float-1">🍒</span>
-        <span class="hero-float hero-float-2">🌽</span>
-        <span class="hero-float hero-float-3">🌶️</span>
-        <span class="hero-float hero-float-4">🍇</span>
-      </div>
-    </div>
-    <div class="hero-img-box">
-      <div class="hero-image-wrap">
-        <img src="img/hero3.png" class="hero-img" alt="Groceries delivery hero image"/>
-      </div>
-    </div>
-  </div>
-  <div class="hero-phone-strip">
-      <div class="container hero-phones-wrap">
-        <div class="hero-store-box">
-          <h3 class="hero-store-title">Grab <span class="hero-accent">Fresh</span> Groceries Near You</h3>
-          <div class="hero-store-links">
-            <a href="#" class="store-badge store-badge--apple" aria-label="Download on the App Store">
-              <span class="store-badge__icon" aria-hidden="true">
-                <ion-icon name="logo-apple"></ion-icon>
-              </span>
-              <span class="store-badge__text">
-                <span class="store-badge__kicker">Download on the</span>
-                <span class="store-badge__store">App Store</span>
-              </span>
-            </a>
 
-            <a href="#" class="store-badge store-badge--google" aria-label="Get it on Google Play">
-              <span class="store-badge__icon" aria-hidden="true">
-                <svg viewBox="0 0 512 512" width="26" height="26" role="presentation" aria-hidden="true">
-                  <path fill="#00A0FF" d="M71.8 39.4c-7.6 7.7-12 20-12 36.8v359.6c0 16.8 4.4 29.1 12 36.8l1.9 1.8 203.7-203.7v-10.6L73.7 37.6l-1.9 1.8z"/>
-                  <path fill="#00D18A" d="M314.8 256 95.7 36.9c5.2-.3 11.1 1 17.7 4.7l262.6 150.8c13.2 7.6 21 17.6 21 28.6s-7.8 21-21 28.6L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7L314.8 256z" opacity=".98"/>
-                  <path fill="#FFD54A" d="M376 249.6 314.8 256l61.2 6.4 72.2-41.4c13.2-7.6 21-17.6 21-28.6 0 11-7.8 21-21 28.6L376 249.6z"/>
-                  <path fill="#FF3B30" d="M95.7 475.1 314.8 256l61.2 6.4L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7z" opacity=".85"/>
-                </svg>
-              </span>
-              <span class="store-badge__text">
-                <span class="store-badge__kicker">GET IT ON</span>
-                <span class="store-badge__store">Google Play</span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="hero-phones">
-          <img src="img/app/app-screen-7.png" class="hero-phone hero-phone-left" alt="App screen preview left"/>
-          <img src="img/app/app-screen-9.png" class="hero-phone hero-phone-center" alt="App screen preview center"/>
-          <img src="img/app/app-screen-10.png" class="hero-phone hero-phone-right" alt="App screen preview right"/>
-        </div>
-      </div>
-  </div>
-  </section>
-  <section class="section-featured">
-    <div class="container">
-      <h2 class="heading-featured-in">Trusted by modern food brands</h2>
-     <div class="logos">
-      <img src="img/logos/techcrunch.png" alt="techcrunch"/>
-      <img src="img/logos/business-insider.png" alt="business-insider"/>
-      <img src="img/logos/the-new-york-times.png" alt=""/>
-      <img src="img/logos/forbes.png" alt="forbes"/>
-      <img src="img/logos/usa-today.png" alt="usa-today"/>
-     </div>
-    </div>
-  </section>
-  <section class="section-how " id="how">
-     <div class="container">
-      <span class="subheading">How it works</span>
-      <h2 class="heading-secondary">Get your groceries in 3 simple steps</h2>
-
-     </div>
-     <div class="container  grid  grid--2-cols grid--center-v " >
-                          <!--  step 01 -->
-          <div class="step-text-box">
-               <p class="step-number">01</p>
-               <h3 class="heading-tertiary">Choose your grocery preferences</h3>
-               <p class="step-description">
-               Browse fresh produce, pantry essentials, and daily offers. Save your favorites and build your basket in seconds.
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Bring the
+              <span class="hero-accent">Store</span>
+              <br />
+              to your
+              <span class="hero-accent">Door</span>
+            </h1>
+            <p class="hero-description">
+              Koliago delivers farm-fresh groceries in minutes. Explore
+              categories, track your order live, and enjoy stress-free shopping
+              every day.
+            </p>
+            <a href="#how" class="btn btn-full margin-right-sn">How to Order</a>
+            <a href="#meals" class="btn btn-outline">See Categories</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img
+                  src="img/customers/customer-1.jpg"
+                  alt="Happy customer 1"
+                />
+                <img
+                  src="img/customers/customer-2.jpg"
+                  alt="Happy customer 2"
+                />
+                <img
+                  src="img/customers/customer-3.jpg"
+                  alt="Happy customer 3"
+                />
+              </div>
+              <p class="delivered-text">
+                Make our customers Happy
+                <br />
+                <span>4.6</span>
+                (10.1k review)
               </p>
             </div>
-          <div class="step-img-box">
-            <img src="img/app/app-screen-1.png"  class="step-img"alt="iphone app preferences section screen">
-            
-          </div>
-                          <!--  step 02 -->
-            <div class="step-img-box">
-            <img src="img/app/app-screen-2.png"  class="step-img"alt="iphone app preferences section screen">           
-              </div>
-
-
-              <div class="step-text-box">
-                <p class="step-number">02</p>
-                <h3 class="heading-tertiary">Confirm your cart and address</h3>
-                <p class="step-description">
-                 Choose your preferred delivery slot, payment method, and notes. Koliago instantly confirms your order.
-
-               </p>
-             </div>
-                                    <!--  step 03 -->
-           <div class="step-text-box">
-           <p class="step-number">03</p>
-          <h3 class="heading-tertiary">Receive your order at your door</h3>
-          <p class="step-description">
-             Track your rider in real time and get your groceries fast, fresh, and safely packed whenever you need.
-          </p>
-          </div>                                                          
-             <div class="step-img-box">
-             <img src="img/app/app-screen-3.png"  class="step-img"alt="iphone app preferences section screen">           
+            <div class="hero-floating-items" aria-hidden="true">
+              <span class="hero-float hero-float-1">🍒</span>
+              <span class="hero-float hero-float-2">🌽</span>
+              <span class="hero-float hero-float-3">🌶️</span>
+              <span class="hero-float hero-float-4">🍇</span>
             </div>
-                                   
-     </div>
+          </div>
+          <div class="hero-img-box">
+            <div class="hero-image-wrap">
+              <img
+                src="img/hero3.png"
+                class="hero-img"
+                alt="Groceries delivery hero image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-phone-strip">
+          <div class="container hero-phones-wrap">
+            <div class="hero-store-box">
+              <h3 class="hero-store-title">
+                Grab
+                <span class="hero-accent">Fresh</span>
+                Groceries Near You
+              </h3>
+              <div class="hero-store-links">
+                <a
+                  href="#"
+                  class="store-badge store-badge--apple"
+                  aria-label="Download on the App Store"
+                >
+                  <span class="store-badge__icon" aria-hidden="true">
+                    <ion-icon name="logo-apple"></ion-icon>
+                  </span>
+                  <span class="store-badge__text">
+                    <span class="store-badge__kicker">Download on the</span>
+                    <span class="store-badge__store">App Store</span>
+                  </span>
+                </a>
 
-  </section>
-  <!-- <section class="section-meals" id="meals">
+                <a
+                  href="#"
+                  class="store-badge store-badge--google"
+                  aria-label="Get it on Google Play"
+                >
+                  <span class="store-badge__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 512 512"
+                      width="26"
+                      height="26"
+                      role="presentation"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="#00A0FF"
+                        d="M71.8 39.4c-7.6 7.7-12 20-12 36.8v359.6c0 16.8 4.4 29.1 12 36.8l1.9 1.8 203.7-203.7v-10.6L73.7 37.6l-1.9 1.8z"
+                      />
+                      <path
+                        fill="#00D18A"
+                        d="M314.8 256 95.7 36.9c5.2-.3 11.1 1 17.7 4.7l262.6 150.8c13.2 7.6 21 17.6 21 28.6s-7.8 21-21 28.6L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7L314.8 256z"
+                        opacity=".98"
+                      />
+                      <path
+                        fill="#FFD54A"
+                        d="M376 249.6 314.8 256l61.2 6.4 72.2-41.4c13.2-7.6 21-17.6 21-28.6 0 11-7.8 21-21 28.6L376 249.6z"
+                      />
+                      <path
+                        fill="#FF3B30"
+                        d="M95.7 475.1 314.8 256l61.2 6.4L113.4 470.4c-6.6 3.8-12.5 5.1-17.7 4.7z"
+                        opacity=".85"
+                      />
+                    </svg>
+                  </span>
+                  <span class="store-badge__text">
+                    <span class="store-badge__kicker">GET IT ON</span>
+                    <span class="store-badge__store">Google Play</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="hero-phones">
+              <img
+                src="img/app/app-screen-7.png"
+                class="hero-phone hero-phone-left"
+                alt="App screen preview left"
+              />
+              <img
+                src="img/app/app-screen-9.png"
+                class="hero-phone hero-phone-center"
+                alt="App screen preview center"
+              />
+              <img
+                src="img/app/app-screen-10.png"
+                class="hero-phone hero-phone-right"
+                alt="App screen preview right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">Trusted by modern food brands</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="techcrunch" />
+            <img src="img/logos/business-insider.png" alt="business-insider" />
+            <img src="img/logos/the-new-york-times.png" alt="" />
+            <img src="img/logos/forbes.png" alt="forbes" />
+            <img src="img/logos/usa-today.png" alt="usa-today" />
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Get your groceries in 3 simple steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <!--  step 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Choose your grocery preferences</h3>
+            <p class="step-description">
+              Browse fresh produce, pantry essentials, and daily offers. Save
+              your favorites and build your basket in seconds.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-14.png"
+              class="step-img"
+              alt="iphone app preferences section screen"
+            />
+          </div>
+          <!--  step 02 -->
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-15.png"
+              class="step-img"
+              alt="iphone app preferences section screen"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Confirm your cart and address</h3>
+            <p class="step-description">
+              Choose your preferred delivery slot, payment method, and notes.
+              Koliago instantly confirms your order.
+            </p>
+          </div>
+          <!--  step 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Receive your order at your door</h3>
+            <p class="step-description">
+              Track your rider in real time and get your groceries fast, fresh,
+              and safely packed whenever you need.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-16.png"
+              class="step-img"
+              alt="iphone app preferences section screen"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section-meals" id="meals">
     <div class="container center-text">
       <span class="subheading">Categories</span>
       <h2 class="heading-secondary">Top picks from Koliago marketplace</h2>
@@ -263,8 +375,8 @@
            <sapn> <strong>4.8</strong> rating (537)</sapn></li>
       </ul>
     </div> -->
-  
-    <!-- <div class="list diets" >
+
+      <!-- <div class="list diets" >
       <h3 class="heading-tertiary">Perfect for every lifestyle</h3>
       <ul class="list">
          <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><span>Vegetarian</span></li>
@@ -368,7 +480,7 @@
   </div>
   </div>
   </section> -->
-  <!-- <section class="section-pricing" id="price">
+      <!-- <section class="section-pricing" id="price">
 
     <div class="container ">
       <span class="subheading">Pricing</span>
@@ -472,7 +584,7 @@
     
     </div>
   </section> -->
-  <!-- <section class="section-cta" id="cta">
+      <!-- <section class="section-cta" id="cta">
     <div class="container ">
       <div class="cta">
 
@@ -514,66 +626,87 @@
       </div>
     </div>
   </section> -->
-</main>
-<section class="section-discount">
-  <div class="container discount-banner">
-    <div class="discount-brand">
-      <h3>KOLIAGO</h3>
-      <p>PREMIUM CUSTOMER</p>
-    </div>
-    <div class="discount-copy">
-      Want additional discounts every shopping day? Enjoy a variety of special offers and experience better value on every order. Join Koliago Premium now.
-    </div>
-    <div class="discount-actions">
-      <a href="#cta" class="discount-btn">Join Now</a>
-      <a href="#price" class="discount-btn discount-btn-outline">More Info</a>
-    </div>
-  </div>
-</section>
-<footer class="footer">
-  <div class="container footer-clean">
-    <div class="footer-brand-col">
-      <a href="#" class="footer-logo">
-        <img src="img/koliago2.png" class="logo" alt="koliago logo">
-      </a>
-      <p class="footer-brand-copy">Best groceries app ever. Pick your desired groceries from the menu.</p>
-      <ul class="social-link">
-        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a></li>
-        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
-        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
-        <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
-      </ul>
-    </div>
-    <nav class="footer-col">
-      <p class="footer-heading">Support</p>
-      <ul class="footer-nav">
-        <li><a href="#" class="footer-link">Account</a></li>
-        <li><a href="#" class="footer-link">Support Center</a></li>
-        <li><a href="#" class="footer-link">Feedback</a></li>
-        <li><a href="#" class="footer-link">Accessibility</a></li>
-      </ul>
-    </nav>
-    <nav class="footer-col">
-      <p class="footer-heading">Useful Links</p>
-      <ul class="footer-nav">
-        <li><a href="#" class="footer-link">Payment & Tax</a></li>
-        <li><a href="#" class="footer-link">Terms of Service</a></li>
-        <li><a href="#" class="footer-link">Privacy Policy</a></li>
-        <li><a href="#" class="footer-link">About Us</a></li>
-      </ul>
-    </nav>
-    <nav class="footer-col">
-      <p class="footer-heading">Our Menu</p>
-      <ul class="footer-nav">
-        <li><a href="#" class="footer-link">Top Selling</a></li>
-        <li><a href="#" class="footer-link">Categories</a></li>
-        <li><a href="#" class="footer-link">Fresh Deals</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+    </main>
+    <section class="section-discount">
+      <div class="container discount-banner">
+        <div class="discount-brand">
+          <h3>KOLIAGO</h3>
+          <p>PREMIUM CUSTOMER</p>
+        </div>
+        <div class="discount-copy">
+          Want additional discounts every shopping day? Enjoy a variety of
+          special offers and experience better value on every order. Join
+          Koliago Premium now.
+        </div>
+        <div class="discount-actions">
+          <a href="#cta" class="discount-btn">Join Now</a>
+          <a href="#price" class="discount-btn discount-btn-outline">
+            More Info
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-clean">
+        <div class="footer-brand-col">
+          <a href="#" class="footer-logo">
+            <img src="img/koliago2.png" class="logo" alt="koliago logo" />
+          </a>
+          <p class="footer-brand-copy">
+            Best groceries app ever. Pick your desired groceries from the menu.
+          </p>
+          <ul class="social-link">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer-col">
+          <p class="footer-heading">Support</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Account</a></li>
+            <li><a href="#" class="footer-link">Support Center</a></li>
+            <li><a href="#" class="footer-link">Feedback</a></li>
+            <li><a href="#" class="footer-link">Accessibility</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col">
+          <p class="footer-heading">Useful Links</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Payment & Tax</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">About Us</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col">
+          <p class="footer-heading">Our Menu</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Top Selling</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="#" class="footer-link">Fresh Deals</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
-</body>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
 </html>

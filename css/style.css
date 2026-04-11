@@ -14,7 +14,6 @@
   position: relative;
 }
 .logo {
- 
   height: 2.2rem;
 }
 
@@ -41,7 +40,7 @@
 }
 
 .brand-text-accent {
-  color: #290202;;
+  color: #290202;
 }
 
 .brand:hover .brand-text {
@@ -285,6 +284,11 @@
   display: flex;
   gap: 1.2rem;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+#store-badge-header {
+  background-color: #9b0303;
 }
 
 .store-badge:link,
@@ -297,9 +301,13 @@
   text-decoration: none;
   color: #fff;
   border: 1.5px solid rgba(255, 255, 255, 0.55);
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.42) 100%); */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
   box-shadow: 0 1.8rem 4.2rem rgba(0, 0, 0, 0.25);
-  background-color: #9b0303;;
+
   line-height: 1.1;
   min-height: 6.2rem;
   min-width: 21rem;
@@ -308,7 +316,11 @@
 .store-badge:hover,
 .store-badge:active {
   transform: translateY(-2px);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.48) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.48) 100%
+  );
 }
 
 .store-badge__icon {
@@ -673,7 +685,7 @@
   text-align: center;
 }
 .feature-icon {
-  color: #9b0303;;
+  color: #9b0303;
   width: 3.4rem;
   height: 3.4rem;
   margin-bottom: 2.4rem;
