@@ -116,6 +116,7 @@
   background: none;
   cursor: pointer;
   display: none;
+  color: #ffffff;
 }
 
 .icon-mobile-nav {
@@ -123,7 +124,20 @@
   width: 4.8rem;
   color: #ffffff;
 }
-.icon-mobile-nav[name="close-outline"] {
+
+/* Ion web component: ensure glyph renders white on red header */
+.btn-mobile-nav ion-icon.icon-mobile-nav {
+  color: #ffffff;
+  fill: currentColor;
+  stroke: currentColor;
+  opacity: 1;
+}
+
+/* Hamburger visible by default; close hidden (Ion shadow DOM ignores [name] for display) */
+.icon-mobile-nav--menu {
+  display: block;
+}
+.icon-mobile-nav--close {
   display: none;
 }
 

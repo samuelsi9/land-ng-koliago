@@ -251,12 +251,21 @@
   .btn-form {
     margin-top: 1.2rem;
   }
-  /* mobile navigation */
+  /* mobile navigation — header + drawer above all page content */
+  .header {
+    position: relative;
+    z-index: 9000;
+    isolation: isolate;
+  }
+
   .btn-mobile-nav {
     display: block;
-    z-index: 100;
+    position: relative;
+    z-index: 2;
   }
+
   .main-nav {
+    z-index: 1;
     background: linear-gradient(
       165deg,
       rgba(196, 26, 26, 0.97) 0%,
@@ -264,12 +273,13 @@
       rgba(111, 2, 2, 0.98) 100%
     );
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(10px);
-    position: absolute;
+    backdrop-filter: blur(5px);
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    height: 100dvh;
     transform: translateX(100%);
     display: flex;
     align-items: center;
@@ -299,11 +309,21 @@
     visibility: visible;
     transform: translateX(0);
   }
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .icon-mobile-nav--close {
     display: block;
   }
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .icon-mobile-nav--menu {
     display: none;
+  }
+
+  /* Drawer open: page behind is not interactive (menu stays on top) */
+  body:has(.header.nav-open) {
+    overflow: hidden;
+  }
+
+  body:has(.header.nav-open) main {
+    pointer-events: none;
+    user-select: none;
   }
 }
 /* below 704px (smaller tablets) */
