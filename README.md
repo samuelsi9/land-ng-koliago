@@ -1,58 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+# Koliago — landing page (React + Vite)
 
-</head>
-<body>
+This repository is a **Vite + React** app you can clone, build, and deploy (GitHub Pages, Netlify, Vercel, etc.).
 
-  <h1>🍽️ Omnifood – Smart AI-Powered Meal Planner</h1>
+## Quick start
 
-  <p>
-    Omnifood is a fully responsive front-end web application that showcases a fictional AI-based meal planning service. 
-    It helps users discover healthy and personalized meal plans based on their preferences and dietary needs — all designed 
-    with modern HTML, CSS, and JavaScript.
-  </p>
+```bash
+git clone <your-repo-url>
+cd <repo-folder>
+npm install
+npm run dev
+```
 
-  <blockquote>⚠️ This is a <strong>frontend-only</strong> project. There is no backend, database, or real AI involved.</blockquote>
+Then open the URL Vite prints (usually `http://localhost:5173`).
 
-  <hr>
+## Production build
 
-  <h2>🚀 Features</h2>
-  <ul>
-    <li>🌱 Personalized weekly meal planning</li>
-    <li>🧠 AI-generated food suggestions based on your likes and dislikes</li>
-    <li>✅ Customizable plans: swap meals, change ingredients, or add your own</li>
-    <li>👨‍🍳 Meals cooked by professional chefs</li>
-    <li>🚚 Flexible daily delivery scheduling</li>
-  </ul>
+```bash
+npm run build
+npm run preview
+```
 
-  <hr>
+Static output is in **`dist/`**. Deploy that folder as the site root (most hosts run `npm run build` for you and publish `dist`).
 
-  <h2>📸 Preview</h2>
-  <p>
-    <a href="https://omnifood-graoleinspiration.netlify.app/">Omnifood Demo <a/>
-  </p>
+### GitHub Pages (project site, e.g. `username.github.io/repo-name/`)
 
-  <hr>
+Set Vite’s base to your repo name so assets load correctly:
 
-  <h2>🛠️ Tech Stack</h2>
-  <ul>
-    <li>✅ HTML5</li>
-    <li>🎨 CSS3 (Flexbox, Grid,flexbox)</li>
-    <li>✨ JavaScript (Vanilla JS)</li>
-    <li>📱 Fully responsive design (mobile-first)</li>
-  </ul>
+```js
+// vite.config.js
+export default defineConfig({
+  base: '/your-repo-name/',
+  plugins: [react()],
+})
+```
 
-  <hr>
+Rebuild, then upload **`dist`** contents to the `gh-pages` branch or use a GitHub Action that runs `npm ci && npm run build` and publishes `dist`.
 
-  <h2>📁 Getting Started</h2>
-  <ol>
-    <li>Clone the repository:</li>
-  </ol>
-  <pre><code>git clone https://github.com/your-username/omnifood.git
-cd omnifood</code></pre>
+---
 
-</body>
-</html>
+## Legacy static site (HTML / CSS / JS)
+
+The original **vanilla** version is preserved in **`legacy-static/`**:
+
+- `legacy-static/index.html` — entry page  
+- `legacy-static/css/`, `javascript/`, `img/`, `downloads/`, `manifest.webmanifest`
+
+To preview it locally, open `legacy-static/index.html` in a browser or serve that folder with any static server (it is **not** part of the Vite build).
+
+See **`legacy-static/README.md`** for details.
+
+---
+
+## Project layout
+
+| Path | Purpose |
+|------|--------|
+| `src/` | React components and `main.jsx` |
+| `src/styles/` | Global CSS (copied from the old `css/` tree) |
+| `public/` | Static files served as `/` (images, APK zip, web manifest) |
+| `legacy-static/` | Archived HTML/CSS/JS site for reference |
