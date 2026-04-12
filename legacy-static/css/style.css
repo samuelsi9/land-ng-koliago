@@ -637,10 +637,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
   padding: 4.2rem 5rem;
   border-radius: 2.4rem;
   border: 1px solid rgba(15, 31, 74, 0.06);
+  min-width: 0;
 }
 
 .how-step-card--a {
@@ -661,6 +662,7 @@
 
 .how-step-card__body {
   position: relative;
+  min-width: 0;
 }
 
 .how-step-card__badge {
@@ -698,11 +700,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
+  width: 100%;
 }
 
 .how-step-card__frame {
   width: 100%;
-  max-width: 38rem;
+  max-width: min(38rem, 100%);
   aspect-ratio: 1;
   margin: 0 auto;
   border-radius: 2rem;
@@ -710,6 +714,7 @@
   align-items: center;
   justify-content: center;
   padding: 2.4rem;
+  box-sizing: border-box;
   box-shadow: 0 1.8rem 4.5rem rgba(15, 31, 74, 0.14);
 }
 

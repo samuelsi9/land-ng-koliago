@@ -49,6 +49,38 @@
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
+
+  /* How it works: single column so copy + phone screenshots are not squeezed */
+  .section-how {
+    padding: 8rem 0;
+  }
+
+  .how-intro {
+    margin-bottom: 4.8rem;
+  }
+
+  .how-steps {
+    gap: 3.2rem;
+    max-width: 56rem;
+  }
+
+  .how-step-card {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    padding: 3.6rem 3.2rem;
+    align-items: stretch;
+  }
+
+  .how-step-card__visual {
+    width: 100%;
+    max-width: 36rem;
+    margin-inline: auto;
+  }
+
+  .how-step-card__frame {
+    max-width: 100%;
+    aspect-ratio: 10 / 11;
+  }
 }
 /* below 944 (Tablets) */
 @media (max-width: 59em) {
@@ -178,9 +210,18 @@
   }
   .how-step-card {
     grid-template-columns: 1fr;
-    gap: 3.2rem;
-    padding: 3.6rem 3.2rem;
+    gap: 3rem;
+    padding: 3.2rem 2.8rem;
   }
+
+  .how-step-card__visual {
+    max-width: 100%;
+  }
+
+  .how-step-card__frame {
+    aspect-ratio: 10 / 11;
+  }
+
   .how-step-card__title {
     font-size: 2.5rem;
   }
@@ -375,8 +416,12 @@
   }
   .how-step-card {
     grid-template-columns: 1fr;
-    gap: 2.8rem;
-    padding: 3.2rem 2.4rem;
+    gap: 2.4rem;
+    padding: 3rem 2rem;
+  }
+
+  .how-step-card__frame {
+    padding: 2rem 1.6rem;
   }
 }
 /* below 544px */
@@ -589,6 +634,12 @@
   .section-how {
     padding: 5.6rem 0;
   }
+
+  .section-how .container {
+    padding-left: max(1.6rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.6rem, env(safe-area-inset-right, 0px));
+  }
+
   .how-intro {
     margin-bottom: 4rem;
   }
@@ -596,11 +647,11 @@
     font-size: 1.65rem;
   }
   .how-steps {
-    gap: 2.8rem;
+    gap: 2.4rem;
   }
   .how-step-card {
-    padding: 2.8rem 2rem;
-    gap: 2.4rem;
+    padding: 2.4rem 1.6rem;
+    gap: 2rem;
     border-radius: 2rem;
   }
   .how-step-card__badge {
@@ -616,8 +667,17 @@
     font-size: 1.6rem;
   }
   .how-step-card__frame {
-    padding: 1.6rem;
+    padding: 1.2rem 1rem;
     border-radius: 1.6rem;
+    aspect-ratio: unset;
+    min-height: 0;
+  }
+
+  .how-step-card__frame .step-img {
+    max-height: min(52rem, 62vh);
+    width: auto;
+    max-width: 100%;
+    margin-inline: auto;
   }
   .testimonials {
     grid-template-columns: 1fr;
