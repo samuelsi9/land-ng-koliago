@@ -41,9 +41,9 @@ export default function HowItWorks() {
           <span className="subheading">How it works</span>
           <h2 className="heading-secondary">How does ordering work?</h2>
           <p className="how-intro__lead">
-            From picking products to doorstep delivery, Koliago keeps every step
-            clear and quick — so you spend less time shopping and more time
-            enjoying fresh food.
+            From fresh picks to fast delivery, Koliago makes grocery shopping
+            simple, clear, and quick — so you can spend less time shopping and
+            more time enjoying your meals.
           </p>
           <a href="#how" className="how-intro__cta">
             Browse categories

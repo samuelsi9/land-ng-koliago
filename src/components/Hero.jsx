@@ -1,6 +1,6 @@
-import GooglePlayIcon from './GooglePlayIcon.jsx'
+import GooglePlayIcon from "./GooglePlayIcon.jsx";
 
-const APP_STORE = 'https://apps.apple.com/us/app/koliago/id6760557417'
+const APP_STORE = "https://apps.apple.com/us/app/koliago/id6760557417";
 
 export default function Hero({ sectionRef }) {
   return (
@@ -39,17 +39,21 @@ export default function Hero({ sectionRef }) {
       <div className="hero">
         <div className="hero-text-box">
           <h1 className="heading-primary">
-            <span className="hero-heading-line hero-heading-line--highlight" id="background-span">
-              Bring the
-              <span className="hero-accent">Store</span>
+            <span
+              className="hero-heading-line hero-heading-line--highlight"
+              id="background-span"
+            >
+              Bring the Store
+              <span className="hero-accent"></span>
             </span>
             <br />
             to your
             <span className="hero-accent">Door</span>
           </h1>
           <p className="hero-description">
-            Koliago delivers farm-fresh groceries in minutes. Explore categories, track your order live, and enjoy
-            stress-free shopping every day.
+            Koliago delivers farm-fresh groceries in minutes. Explore
+            categories, track your order live, and enjoy stress-free shopping
+            every day.
           </p>
           <a href="#how" className="btn btn-full margin-right-sn">
             How to Order
@@ -79,7 +83,11 @@ export default function Hero({ sectionRef }) {
         </div>
         <div className="hero-img-box">
           <div className="hero-image-wrap">
-            <img src="/img/koliago3.png" className="hero-img" alt="Groceries delivery hero image" />
+            <img
+              src="/img/koliago3.png"
+              className="hero-img"
+              alt="Groceries delivery hero image"
+            />
           </div>
         </div>
       </div>
@@ -122,7 +130,11 @@ export default function Hero({ sectionRef }) {
             </div>
           </div>
           <div className="hero-phones">
-            <img src="/img/app/app-screen-7.png" className="hero-phone hero-phone-left" alt="App screen preview left" />
+            <img
+              src="/img/app/app-screen-7.png"
+              className="hero-phone hero-phone-left"
+              alt="App screen preview left"
+            />
             <img
               src="/img/app/app-screen-9.png"
               className="hero-phone hero-phone-center"
@@ -137,5 +149,5 @@ export default function Hero({ sectionRef }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
