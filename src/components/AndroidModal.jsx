@@ -54,9 +54,9 @@ export default function AndroidModal({ open, onClose }) {
             Follow the prompts to <strong>Install</strong> and open Koliago.
           </li>
         </ol>
-        {/* for testing purposes */}
+        {/* for testing purposes  //href="https://github.com/DeograciasGraole/land-ng-koliago/releases/download/v1.0/koliaGo.app.zip" */}
         <a
-          href="https://github.com/DeograciasGraole/land-ng-koliago/releases/download/v1.0/koliaGo.app.zip"
+          href="https://github.com/DeograciasGraole/land-ng-koliago/releases/download/v1.0/koliaGo.zip"
           download
           className="android-modal__download js-android-download-zip"
         >
